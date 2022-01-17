@@ -1,0 +1,17 @@
+<div name="preloader" id="preloader" class="absolute z-50 flex flex-col w-full h-screen bg-white dark:bg-black justify-center items-center content-center">
+            <img src="img/logo.svg" class="animate-pulse">
+            <p class="font-sans mt-2 animate-pulse">Please Wait...</p>
+        </div>
+
+        <script type="text/javascript">
+        $(window).on('load', function() {
+            setTimeout(function() {
+                $("#preloader").hide();
+            }, 3000);
+        });
+        $(window).on('load', function() {
+            setTimeout(function() {
+                $('#menu').show();
+            }, 4000);
+        });
+    </script>
